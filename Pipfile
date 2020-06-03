@@ -9,6 +9,7 @@ verify_ssl = true
 psycopg2 = "*"
 app = "*"
 gunicorn = "*"
+flask = "*"
 
 [requires]
 python_version = "3.8"
