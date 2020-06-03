@@ -6,7 +6,7 @@ import os
 
 app = Flask(__name__)
 CORS(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://ajzxryjeihfarh:ac16250848148650f512b5221f0d90b1a859f091294d564180bbd2a57bb95ca6@ec2-3-222-150-253.compute-1.amazonaws.com:5432/d4lk4d27bhuela'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database/controles.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
