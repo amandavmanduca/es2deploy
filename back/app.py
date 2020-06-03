@@ -58,6 +58,11 @@ def cadastro():
     return jsonify([controle.to_json() for controle in controles])
 
 
+@app.route('/criadb')
+def create_tables():
+    db.create_all()
+
+
 @app.route('/controles/hoje')
 @cross_origin()
 def busca():
